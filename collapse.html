@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap collapse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/bootscrap/cssbt/bootstrap.css">
+  <script src="/bootscrap/jsbt/bootstrap.js"></script>
+  <script src="/bootscrap/jsbt/jquery.js"></script>
+
+  <script src="/bootscrap/jsbt/bootstrap.bundle.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <!-- collapsibles are useful when u want to hide and show large amount of content -->
+ <!-- case 1:for button we use data-bs-target="#para1 attribute to coonect the button with the collapsible content .(div id="para1")-->
+  <h2>Simple Collapsible</h2>
+  <p>Click on the button to toggle between showing and hiding content.</p>
+
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#para1" data-parent="#raju">HTML</button>
+  <div id="para1" class="collapse">
+    hyper text markup language
+  </div>
+  </div>
+<!-- case 2 :for link (<a>) elements,we can use the  href attribute  instead of the data-target attribute-->
+
+  <div id="raju">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#raju">
+        <div class="card-body">css</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#raju">
+        <div class="card-body">HTPP</div>
+    </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#raju">
+        <div class="card-body">amma</div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+</body>
+</html>
